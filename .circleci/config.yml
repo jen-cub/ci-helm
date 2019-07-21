@@ -6,7 +6,11 @@ jobs:
     docker:
       - image: golang:1.12.5
     environment:
+<<<<<<< HEAD
       PROJECT_NAME: "jendevops1"
+=======
+      PROJECT_NAME: "jc-k8s-helm"
+>>>>>>> 51b83925f6cd9badd46eedc925ac0c2fd3f1ba98
     steps:
       - checkout
       - setup_remote_docker:
