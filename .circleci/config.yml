@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     working_directory: /go/src/k8s.io/helm
-    parallelism: 3
+    parallelism: 1
     docker:
       - image: golang:1.12.5
     environment:
