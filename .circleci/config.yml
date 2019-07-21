@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: golang:1.12.5
     environment:
-      PROJECT_NAME: "kubernetes-helm"
+      PROJECT_NAME: "jc-k8s-helm"
     steps:
       - checkout
       - setup_remote_docker:
