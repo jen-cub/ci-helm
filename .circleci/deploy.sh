@@ -49,6 +49,7 @@ echo "${GCLOUD_SERVICE_KEY}" > "${HOME}/gcloud-service-key.json"
 #echo "${GCLOUD_SERVICE_KEY}" | base64 --decode > "${HOME}/gcloud-service-key.json"
 ${HOME}/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file "${HOME}/gcloud-service-key.json"
 ${HOME}/google-cloud-sdk/bin/gcloud config set project "${PROJECT_NAME}"
+echo "${PROJECT_NAME}"
 docker login -u _json_key -p "$(cat ${HOME}/gcloud-service-key.json)" https://gcr.io
 
 echo "Building the tiller image"
