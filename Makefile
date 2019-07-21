@@ -1,5 +1,5 @@
 DOCKER_REGISTRY   ?= gcr.io
-IMAGE_PREFIX      ?= kubernetes-helm
+IMAGE_PREFIX      ?= jendevops1
 DEV_IMAGE         ?= golang:1.12.5
 SHORT_NAME        ?= tiller
 SHORT_NAME_RUDDER ?= rudder
