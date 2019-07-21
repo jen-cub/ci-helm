@@ -36,7 +36,7 @@ generate_cover_data() {
 }
 
 push_to_coveralls() {
-  goveralls -coverprofile="${profile}" -service=circle-ci
+  goveralls -coverprofile="${profile}" -service=circle-ci -repotoken $COVERALLS_REPO_TOKEN
 }
 
 generate_cover_data
@@ -50,4 +50,3 @@ case "${1-}" in
     push_to_coveralls
     ;;
 esac
-
